@@ -1,0 +1,8 @@
+prefix=/home/developer-admin/avd_ws/devel
+
+Name: laser_obstacle
+Description: Description of laser_obstacle
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/developer-admin/avd_ws/devel/lib 
+Requires: 

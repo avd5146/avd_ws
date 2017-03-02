@@ -1,0 +1,12 @@
+roslaunch gazebo_ros willowgarage_world.launch
+roslaunch gazebo_ros mud_world.launch
+roslaunch gazebo_ros shapes_world.launch
+roslaunch gazebo_ros rubble_world.launch
+
+roslaunch pr2_gazebo pr2.launch
+
+roslaunch pr2_teleop teleop_keyboard.launch
+
+rosservice call laser_tilt_controller/set_periodic_cmd '{ command: { header: { stamp: 0 }, profile: "linear" , period: 3 , amplitude: 1 , offset: 0 }}'
+
+rosrun rviz rviz

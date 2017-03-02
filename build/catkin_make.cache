@@ -1,0 +1,2 @@
+avd_sub:avd_turtle3:headtraj:laser_obstacle:pr2_avd_nav:pr2_nav:pr2_tuckarm:simple_nav_goal:simple_navigation_goals:simple_trajectory:tilt_laser_sub:tuckarmsboth:turt
+-DCATKIN_DEVEL_PREFIX=/home/ankur/avd_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ankur/avd_ws/install -G Unix Makefiles

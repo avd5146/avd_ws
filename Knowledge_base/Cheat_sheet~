@@ -1,0 +1,29 @@
+//ROS structure -> ROSCORE/ROSMASTER -> PACKAGE -> TOPIC -> NODE -> PUBLISHER/SUBSCRIBER
+//launch willowgarage empty world
+$ roslaunch gazebo_ros willowgarage_world.launch
+//launch pr2 in gazebo
+// https://cse.sc.edu/~jokane/agitr/agitr-letter.pdf
+
+$ roslaunch pr2_gazebo pr2.launch
+//if catkin_make does not run, delete the CMakelists file and then run
+//remember to initialize the workspace using catkin_init_workspace
+//source the correct .bash file
+$ source ~/<name of the ws>/devel/setup.bash
+//http://wiki.ros.org/pr2_simulator/Tutorials/BasicPR2Controls
+
+rostopic list
+rostopic type /<topic name>
+rosmsg show 
+
+e.g. 
+$ rostopic type /turtle1/pose 
+turtlesim/Pose
+$ rosmsg show turtlesim/Pose
+float32 x
+float32 y
+float32 theta
+float32 linear_velocity
+float32 angular_velocity
+
+rostopic pub <topic name> <msg name> <msg>
+

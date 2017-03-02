@@ -1,0 +1,1 @@
+rostopic pub /l_gripper_controller/command pr2_controllers_msgs/Pr2GripperCommand <position value 0 or 1 open/close > < effort/speed 1000 >

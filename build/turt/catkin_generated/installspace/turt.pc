@@ -1,0 +1,8 @@
+prefix=/home/developer-admin/avd_ws/install
+
+Name: turt
+Description: Description of turt
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/developer-admin/avd_ws/install/lib 
+Requires: 

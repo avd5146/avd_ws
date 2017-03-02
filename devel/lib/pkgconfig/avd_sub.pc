@@ -1,0 +1,8 @@
+prefix=/home/ankur/avd_ws/devel
+
+Name: avd_sub
+Description: Description of avd_sub
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ankur/avd_ws/devel/lib 
+Requires: 

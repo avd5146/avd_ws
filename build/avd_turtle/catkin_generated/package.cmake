@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "avd_turtle")
+set(avd_turtle_MAINTAINER "developer-admin <developer-admin@todo.todo>")
+set(avd_turtle_DEPRECATED "")
+set(avd_turtle_VERSION "0.0.0")
+set(avd_turtle_BUILD_DEPENDS "geometry_msgs" "turtlesim" "roscpp")
+set(avd_turtle_RUN_DEPENDS "geometry_msgs" "turtlesim" "roscpp")
+set(avd_turtle_BUILDTOOL_DEPENDS "catkin")

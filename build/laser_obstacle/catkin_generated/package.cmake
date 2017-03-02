@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "laser_obstacle")
+set(laser_obstacle_MAINTAINER "developer-admin <developer-admin@todo.todo>")
+set(laser_obstacle_DEPRECATED "")
+set(laser_obstacle_VERSION "0.0.0")
+set(laser_obstacle_BUILD_DEPENDS "geometry_msgs" "pr2_gazebo" "roscpp" "sensor_msgs")
+set(laser_obstacle_RUN_DEPENDS "geometry_msgs" "pr2_gazebo" "roscpp" "sensor_msgs")
+set(laser_obstacle_BUILDTOOL_DEPENDS "catkin")

@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "avd_turtle3")
+set(avd_turtle3_MAINTAINER "developer-admin <developer-admin@todo.todo>")
+set(avd_turtle3_DEPRECATED "")
+set(avd_turtle3_VERSION "0.0.0")
+set(avd_turtle3_BUILD_DEPENDS "roscpp" "rospy" "turtlesim")
+set(avd_turtle3_RUN_DEPENDS "roscpp" "rospy" "turtlesim")
+set(avd_turtle3_BUILDTOOL_DEPENDS "catkin")

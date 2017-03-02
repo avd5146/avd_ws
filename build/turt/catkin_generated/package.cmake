@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "turt")
+set(turt_MAINTAINER "developer-admin <developer-admin@todo.todo>")
+set(turt_DEPRECATED "")
+set(turt_VERSION "0.0.0")
+set(turt_BUILD_DEPENDS "geometry_msgs" "roscpp" "rospy")
+set(turt_RUN_DEPENDS "geometry_msgs" "roscpp" "rospy")
+set(turt_BUILDTOOL_DEPENDS "catkin")

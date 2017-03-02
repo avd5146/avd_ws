@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "tuckarmsboth")
+set(tuckarmsboth_MAINTAINER "developer-admin <developer-admin@todo.todo>")
+set(tuckarmsboth_DEPRECATED "")
+set(tuckarmsboth_VERSION "0.0.0")
+set(tuckarmsboth_BUILD_DEPENDS "roscpp" "rospy")
+set(tuckarmsboth_RUN_DEPENDS "roscpp" "rospy")
+set(tuckarmsboth_BUILDTOOL_DEPENDS "catkin")

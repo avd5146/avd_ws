@@ -1,0 +1,35 @@
+<launch>
+
+<include file="$(find gazebo_ros)/launch/willowgarage_world.launch" />
+<include file="$(find pr2_gazebo)/launch/pr2.launch" />
+
+<node
+
+pkg="rviz"
+type="rviz"
+name="rviz"
+output="screen"
+launch-prefix="xterm -e"
+
+/>
+
+<node
+
+pkg="pr2_nav"
+type="pr2nav"
+name="navigate"
+output="screen"
+launch-prefix="xterm -e"
+
+/>
+
+<node
+pkg="rosservice"
+type="rosservice"
+name="switch_ranger"
+args="call --wait laser_tilt_controller/set_periodic_cmd '{ command: { header: { stamp: 0 }, profile: linear , period: 3 , amplitude: 1 , offset: 0 }}'"
+launch-prefix="xterm -e"
+
+/>
+
+</launch>

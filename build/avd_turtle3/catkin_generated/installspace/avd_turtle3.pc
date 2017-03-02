@@ -1,0 +1,8 @@
+prefix=/home/developer-admin/avd_ws/install
+
+Name: avd_turtle3
+Description: Description of avd_turtle3
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/developer-admin/avd_ws/install/lib 
+Requires: 

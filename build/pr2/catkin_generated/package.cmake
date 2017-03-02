@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "pr2")
+set(pr2_MAINTAINER "developer-admin <developer-admin@todo.todo>")
+set(pr2_DEPRECATED "")
+set(pr2_VERSION "0.0.0")
+set(pr2_BUILD_DEPENDS "geometry_msgs" "roscpp" "rospy")
+set(pr2_RUN_DEPENDS "geometry_msgs" "roscpp" "rospy")
+set(pr2_BUILDTOOL_DEPENDS "catkin")

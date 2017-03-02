@@ -1,0 +1,8 @@
+prefix=/home/ankur/avd_ws/devel
+
+Name: headtraj
+Description: Description of headtraj
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ankur/avd_ws/devel/lib 
+Requires: 
