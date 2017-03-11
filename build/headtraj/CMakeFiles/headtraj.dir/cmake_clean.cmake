@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/headtraj.dir/headtraj.cpp.o"
-  "/home/developer-admin/avd_ws/devel/lib/headtraj/headtraj.pdb"
-  "/home/developer-admin/avd_ws/devel/lib/headtraj/headtraj"
+  "/home/ankur/avd_ws/devel/lib/headtraj/headtraj.pdb"
+  "/home/ankur/avd_ws/devel/lib/headtraj/headtraj"
 )
 
 # Per-language clean rules from dependency scanning.

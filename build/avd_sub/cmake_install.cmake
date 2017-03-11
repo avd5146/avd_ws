@@ -1,8 +1,8 @@
-# Install script for directory: /home/developer-admin/avd_ws/src/avd_sub
+# Install script for directory: /home/ankur/avd_ws/src/avd_sub
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/home/developer-admin/avd_ws/install")
+  SET(CMAKE_INSTALL_PREFIX "/home/ankur/avd_ws/install")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,17 +33,17 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/developer-admin/avd_ws/build/avd_sub/catkin_generated/installspace/avd_sub.pc")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ankur/avd_ws/build/avd_sub/catkin_generated/installspace/avd_sub.pc")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/avd_sub/cmake" TYPE FILE FILES
-    "/home/developer-admin/avd_ws/build/avd_sub/catkin_generated/installspace/avd_subConfig.cmake"
-    "/home/developer-admin/avd_ws/build/avd_sub/catkin_generated/installspace/avd_subConfig-version.cmake"
+    "/home/ankur/avd_ws/build/avd_sub/catkin_generated/installspace/avd_subConfig.cmake"
+    "/home/ankur/avd_ws/build/avd_sub/catkin_generated/installspace/avd_subConfig-version.cmake"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/avd_sub" TYPE FILE FILES "/home/developer-admin/avd_ws/src/avd_sub/package.xml")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/avd_sub" TYPE FILE FILES "/home/ankur/avd_ws/src/avd_sub/package.xml")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

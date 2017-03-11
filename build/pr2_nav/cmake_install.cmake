@@ -1,8 +1,8 @@
-# Install script for directory: /home/developer-admin/avd_ws/src/pr2_nav
+# Install script for directory: /home/ankur/avd_ws/src/pr2_nav
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/home/developer-admin/avd_ws/install")
+  SET(CMAKE_INSTALL_PREFIX "/home/ankur/avd_ws/install")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,17 +33,17 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/developer-admin/avd_ws/build/pr2_nav/catkin_generated/installspace/pr2_nav.pc")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ankur/avd_ws/build/pr2_nav/catkin_generated/installspace/pr2_nav.pc")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pr2_nav/cmake" TYPE FILE FILES
-    "/home/developer-admin/avd_ws/build/pr2_nav/catkin_generated/installspace/pr2_navConfig.cmake"
-    "/home/developer-admin/avd_ws/build/pr2_nav/catkin_generated/installspace/pr2_navConfig-version.cmake"
+    "/home/ankur/avd_ws/build/pr2_nav/catkin_generated/installspace/pr2_navConfig.cmake"
+    "/home/ankur/avd_ws/build/pr2_nav/catkin_generated/installspace/pr2_navConfig-version.cmake"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pr2_nav" TYPE FILE FILES "/home/developer-admin/avd_ws/src/pr2_nav/package.xml")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pr2_nav" TYPE FILE FILES "/home/ankur/avd_ws/src/pr2_nav/package.xml")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

@@ -35,11 +35,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# Escaping for special characters.
+EQUALS = =
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/developer-admin/avd_ws/src
+CMAKE_SOURCE_DIR = /home/ankur/avd_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/developer-admin/avd_ws/build
+CMAKE_BINARY_DIR = /home/ankur/avd_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -76,16 +79,6 @@ install/local: preinstall
 install/local/fast: install/local
 .PHONY : install/local/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-.PHONY : install/strip/fast
-
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -117,14 +110,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/developer-admin/avd_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/developer-admin/avd_ws/build/CMakeFiles /home/developer-admin/avd_ws/build/turt/CMakeFiles/progress.marks
-	cd /home/developer-admin/avd_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turt/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/developer-admin/avd_ws/build/CMakeFiles 0
+	cd /home/ankur/avd_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ankur/avd_ws/build/CMakeFiles /home/ankur/avd_ws/build/turt/CMakeFiles/progress.marks
+	cd /home/ankur/avd_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turt/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ankur/avd_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/developer-admin/avd_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turt/clean
+	cd /home/ankur/avd_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turt/clean
 .PHONY : clean
 
 # The main clean target
@@ -133,64 +126,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/developer-admin/avd_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turt/preinstall
+	cd /home/ankur/avd_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turt/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/developer-admin/avd_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turt/preinstall
+	cd /home/ankur/avd_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turt/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/developer-admin/avd_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ankur/avd_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-turt/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
-	cd /home/developer-admin/avd_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turt/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-.PHONY : turt/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_cpp: turt/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-.PHONY : geometry_msgs_generate_messages_cpp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_cpp/fast:
-	cd /home/developer-admin/avd_ws/build && $(MAKE) -f turt/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make turt/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
-.PHONY : geometry_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-turt/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
-	cd /home/developer-admin/avd_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turt/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-.PHONY : turt/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_lisp: turt/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-.PHONY : geometry_msgs_generate_messages_lisp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_lisp/fast:
-	cd /home/developer-admin/avd_ws/build && $(MAKE) -f turt/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make turt/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
-.PHONY : geometry_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-turt/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
-	cd /home/developer-admin/avd_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turt/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-.PHONY : turt/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_py: turt/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-.PHONY : geometry_msgs_generate_messages_py
-
-# fast build rule for target.
-geometry_msgs_generate_messages_py/fast:
-	cd /home/developer-admin/avd_ws/build && $(MAKE) -f turt/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make turt/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
-.PHONY : geometry_msgs_generate_messages_py/fast
-
-# Convenience name for target.
 turt/CMakeFiles/pubvel.dir/rule:
-	cd /home/developer-admin/avd_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turt/CMakeFiles/pubvel.dir/rule
+	cd /home/ankur/avd_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turt/CMakeFiles/pubvel.dir/rule
 .PHONY : turt/CMakeFiles/pubvel.dir/rule
 
 # Convenience name for target.
@@ -199,7 +150,7 @@ pubvel: turt/CMakeFiles/pubvel.dir/rule
 
 # fast build rule for target.
 pubvel/fast:
-	cd /home/developer-admin/avd_ws/build && $(MAKE) -f turt/CMakeFiles/pubvel.dir/build.make turt/CMakeFiles/pubvel.dir/build
+	cd /home/ankur/avd_ws/build && $(MAKE) -f turt/CMakeFiles/pubvel.dir/build.make turt/CMakeFiles/pubvel.dir/build
 .PHONY : pubvel/fast
 
 pubvel.o: pubvel.cpp.o
@@ -207,7 +158,7 @@ pubvel.o: pubvel.cpp.o
 
 # target to build an object file
 pubvel.cpp.o:
-	cd /home/developer-admin/avd_ws/build && $(MAKE) -f turt/CMakeFiles/pubvel.dir/build.make turt/CMakeFiles/pubvel.dir/pubvel.cpp.o
+	cd /home/ankur/avd_ws/build && $(MAKE) -f turt/CMakeFiles/pubvel.dir/build.make turt/CMakeFiles/pubvel.dir/pubvel.cpp.o
 .PHONY : pubvel.cpp.o
 
 pubvel.i: pubvel.cpp.i
@@ -215,7 +166,7 @@ pubvel.i: pubvel.cpp.i
 
 # target to preprocess a source file
 pubvel.cpp.i:
-	cd /home/developer-admin/avd_ws/build && $(MAKE) -f turt/CMakeFiles/pubvel.dir/build.make turt/CMakeFiles/pubvel.dir/pubvel.cpp.i
+	cd /home/ankur/avd_ws/build && $(MAKE) -f turt/CMakeFiles/pubvel.dir/build.make turt/CMakeFiles/pubvel.dir/pubvel.cpp.i
 .PHONY : pubvel.cpp.i
 
 pubvel.s: pubvel.cpp.s
@@ -223,7 +174,7 @@ pubvel.s: pubvel.cpp.s
 
 # target to generate assembly for a file
 pubvel.cpp.s:
-	cd /home/developer-admin/avd_ws/build && $(MAKE) -f turt/CMakeFiles/pubvel.dir/build.make turt/CMakeFiles/pubvel.dir/pubvel.cpp.s
+	cd /home/ankur/avd_ws/build && $(MAKE) -f turt/CMakeFiles/pubvel.dir/build.make turt/CMakeFiles/pubvel.dir/pubvel.cpp.s
 .PHONY : pubvel.cpp.s
 
 # Help Target
@@ -233,12 +184,8 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... geometry_msgs_generate_messages_cpp"
-	@echo "... geometry_msgs_generate_messages_lisp"
-	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... install"
 	@echo "... install/local"
-	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... pubvel"
 	@echo "... rebuild_cache"
@@ -257,6 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/developer-admin/avd_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ankur/avd_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

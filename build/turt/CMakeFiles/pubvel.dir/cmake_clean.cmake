@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/pubvel.dir/pubvel.cpp.o"
-  "/home/developer-admin/avd_ws/devel/lib/turt/pubvel.pdb"
-  "/home/developer-admin/avd_ws/devel/lib/turt/pubvel"
+  "/home/ankur/avd_ws/devel/lib/turt/pubvel.pdb"
+  "/home/ankur/avd_ws/devel/lib/turt/pubvel"
 )
 
 # Per-language clean rules from dependency scanning.

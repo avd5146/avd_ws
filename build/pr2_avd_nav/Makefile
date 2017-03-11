@@ -35,11 +35,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# Escaping for special characters.
+EQUALS = =
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/developer-admin/avd_ws/src
+CMAKE_SOURCE_DIR = /home/ankur/avd_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/developer-admin/avd_ws/build
+CMAKE_BINARY_DIR = /home/ankur/avd_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -76,16 +79,6 @@ install/local: preinstall
 install/local/fast: install/local
 .PHONY : install/local/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-.PHONY : install/strip/fast
-
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -117,14 +110,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/developer-admin/avd_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/developer-admin/avd_ws/build/CMakeFiles /home/developer-admin/avd_ws/build/pr2_avd_nav/CMakeFiles/progress.marks
-	cd /home/developer-admin/avd_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pr2_avd_nav/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/developer-admin/avd_ws/build/CMakeFiles 0
+	cd /home/ankur/avd_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ankur/avd_ws/build/CMakeFiles /home/ankur/avd_ws/build/pr2_avd_nav/CMakeFiles/progress.marks
+	cd /home/ankur/avd_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pr2_avd_nav/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ankur/avd_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/developer-admin/avd_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pr2_avd_nav/clean
+	cd /home/ankur/avd_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pr2_avd_nav/clean
 .PHONY : clean
 
 # The main clean target
@@ -133,22 +126,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/developer-admin/avd_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pr2_avd_nav/preinstall
+	cd /home/ankur/avd_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pr2_avd_nav/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/developer-admin/avd_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pr2_avd_nav/preinstall
+	cd /home/ankur/avd_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pr2_avd_nav/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/developer-admin/avd_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ankur/avd_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 pr2_avd_nav/CMakeFiles/nav_sq.dir/rule:
-	cd /home/developer-admin/avd_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pr2_avd_nav/CMakeFiles/nav_sq.dir/rule
+	cd /home/ankur/avd_ws/build && $(MAKE) -f CMakeFiles/Makefile2 pr2_avd_nav/CMakeFiles/nav_sq.dir/rule
 .PHONY : pr2_avd_nav/CMakeFiles/nav_sq.dir/rule
 
 # Convenience name for target.
@@ -157,7 +150,7 @@ nav_sq: pr2_avd_nav/CMakeFiles/nav_sq.dir/rule
 
 # fast build rule for target.
 nav_sq/fast:
-	cd /home/developer-admin/avd_ws/build && $(MAKE) -f pr2_avd_nav/CMakeFiles/nav_sq.dir/build.make pr2_avd_nav/CMakeFiles/nav_sq.dir/build
+	cd /home/ankur/avd_ws/build && $(MAKE) -f pr2_avd_nav/CMakeFiles/nav_sq.dir/build.make pr2_avd_nav/CMakeFiles/nav_sq.dir/build
 .PHONY : nav_sq/fast
 
 nav_sq.o: nav_sq.cpp.o
@@ -165,7 +158,7 @@ nav_sq.o: nav_sq.cpp.o
 
 # target to build an object file
 nav_sq.cpp.o:
-	cd /home/developer-admin/avd_ws/build && $(MAKE) -f pr2_avd_nav/CMakeFiles/nav_sq.dir/build.make pr2_avd_nav/CMakeFiles/nav_sq.dir/nav_sq.cpp.o
+	cd /home/ankur/avd_ws/build && $(MAKE) -f pr2_avd_nav/CMakeFiles/nav_sq.dir/build.make pr2_avd_nav/CMakeFiles/nav_sq.dir/nav_sq.cpp.o
 .PHONY : nav_sq.cpp.o
 
 nav_sq.i: nav_sq.cpp.i
@@ -173,7 +166,7 @@ nav_sq.i: nav_sq.cpp.i
 
 # target to preprocess a source file
 nav_sq.cpp.i:
-	cd /home/developer-admin/avd_ws/build && $(MAKE) -f pr2_avd_nav/CMakeFiles/nav_sq.dir/build.make pr2_avd_nav/CMakeFiles/nav_sq.dir/nav_sq.cpp.i
+	cd /home/ankur/avd_ws/build && $(MAKE) -f pr2_avd_nav/CMakeFiles/nav_sq.dir/build.make pr2_avd_nav/CMakeFiles/nav_sq.dir/nav_sq.cpp.i
 .PHONY : nav_sq.cpp.i
 
 nav_sq.s: nav_sq.cpp.s
@@ -181,7 +174,7 @@ nav_sq.s: nav_sq.cpp.s
 
 # target to generate assembly for a file
 nav_sq.cpp.s:
-	cd /home/developer-admin/avd_ws/build && $(MAKE) -f pr2_avd_nav/CMakeFiles/nav_sq.dir/build.make pr2_avd_nav/CMakeFiles/nav_sq.dir/nav_sq.cpp.s
+	cd /home/ankur/avd_ws/build && $(MAKE) -f pr2_avd_nav/CMakeFiles/nav_sq.dir/build.make pr2_avd_nav/CMakeFiles/nav_sq.dir/nav_sq.cpp.s
 .PHONY : nav_sq.cpp.s
 
 # Help Target
@@ -193,7 +186,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
-	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... nav_sq"
 	@echo "... rebuild_cache"
@@ -212,6 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/developer-admin/avd_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ankur/avd_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -31,11 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# Escaping for special characters.
+EQUALS = =
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/developer-admin/avd_ws/src
+CMAKE_SOURCE_DIR = /home/ankur/avd_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/developer-admin/avd_ws/build
+CMAKE_BINARY_DIR = /home/ankur/avd_ws/build
 
 # Utility rule file for std_srvs_generate_messages_cpp.
 
@@ -53,10 +56,10 @@ avd_turtle3/CMakeFiles/std_srvs_generate_messages_cpp.dir/build: std_srvs_genera
 .PHONY : avd_turtle3/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
 
 avd_turtle3/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean:
-	cd /home/developer-admin/avd_ws/build/avd_turtle3 && $(CMAKE_COMMAND) -P CMakeFiles/std_srvs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/ankur/avd_ws/build/avd_turtle3 && $(CMAKE_COMMAND) -P CMakeFiles/std_srvs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : avd_turtle3/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean
 
 avd_turtle3/CMakeFiles/std_srvs_generate_messages_cpp.dir/depend:
-	cd /home/developer-admin/avd_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/developer-admin/avd_ws/src /home/developer-admin/avd_ws/src/avd_turtle3 /home/developer-admin/avd_ws/build /home/developer-admin/avd_ws/build/avd_turtle3 /home/developer-admin/avd_ws/build/avd_turtle3/CMakeFiles/std_srvs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ankur/avd_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ankur/avd_ws/src /home/ankur/avd_ws/src/avd_turtle3 /home/ankur/avd_ws/build /home/ankur/avd_ws/build/avd_turtle3 /home/ankur/avd_ws/build/avd_turtle3/CMakeFiles/std_srvs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : avd_turtle3/CMakeFiles/std_srvs_generate_messages_cpp.dir/depend
 

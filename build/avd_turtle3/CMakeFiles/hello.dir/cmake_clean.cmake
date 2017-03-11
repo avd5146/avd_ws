@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/hello.dir/hello.cpp.o"
-  "/home/developer-admin/avd_ws/devel/lib/avd_turtle3/hello.pdb"
-  "/home/developer-admin/avd_ws/devel/lib/avd_turtle3/hello"
+  "/home/ankur/avd_ws/devel/lib/avd_turtle3/hello.pdb"
+  "/home/ankur/avd_ws/devel/lib/avd_turtle3/hello"
 )
 
 # Per-language clean rules from dependency scanning.

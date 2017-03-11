@@ -1,8 +1,8 @@
-prefix=/home/developer-admin/avd_ws/install
+prefix=/home/ankur/avd_ws/install
 
 Name: tuckarmsboth
 Description: Description of tuckarmsboth
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/developer-admin/avd_ws/install/lib 
+Libs: -L/home/ankur/avd_ws/install/lib 
 Requires: 

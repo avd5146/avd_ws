@@ -1,8 +1,8 @@
-# Install script for directory: /home/developer-admin/avd_ws/src/tuckarmsboth
+# Install script for directory: /home/ankur/avd_ws/src/tuckarmsboth
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/home/developer-admin/avd_ws/install")
+  SET(CMAKE_INSTALL_PREFIX "/home/ankur/avd_ws/install")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,17 +33,17 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/developer-admin/avd_ws/build/tuckarmsboth/catkin_generated/installspace/tuckarmsboth.pc")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ankur/avd_ws/build/tuckarmsboth/catkin_generated/installspace/tuckarmsboth.pc")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tuckarmsboth/cmake" TYPE FILE FILES
-    "/home/developer-admin/avd_ws/build/tuckarmsboth/catkin_generated/installspace/tuckarmsbothConfig.cmake"
-    "/home/developer-admin/avd_ws/build/tuckarmsboth/catkin_generated/installspace/tuckarmsbothConfig-version.cmake"
+    "/home/ankur/avd_ws/build/tuckarmsboth/catkin_generated/installspace/tuckarmsbothConfig.cmake"
+    "/home/ankur/avd_ws/build/tuckarmsboth/catkin_generated/installspace/tuckarmsbothConfig-version.cmake"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tuckarmsboth" TYPE FILE FILES "/home/developer-admin/avd_ws/src/tuckarmsboth/package.xml")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tuckarmsboth" TYPE FILE FILES "/home/ankur/avd_ws/src/tuckarmsboth/package.xml")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
